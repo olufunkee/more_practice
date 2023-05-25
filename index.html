@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeEuphoriaBeauty Survey Form</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="title">BeEuphoriaBeauty Survey Form</h1>
+    <p class="description">Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action="url">
+      <fieldset>
+        <label for="name">Name: <input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
+        <label for="email">Email: <input id="email" type="email" name="email" placeholder="Enter your Email" required/></label>
+        <label for="age">Age (optional): <input id="age" type="number" name="age" placeholder="Enter your age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="role"> Which option best describes your current role?
+          <select id="role" name="role">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Learner</option>
+            <option>Full Time Job</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+       <p>Would you recommend BEB products to a friend?</p>
+        <label for="definitely"><input class="inline" id="definitely" type="radio" name="recommend-options" value="Definitely">Definitely</label>
+        <label for="maybe"><input class="inline" id="maybe" type="radio" name="recommend-options" value="Maybe">Maybe</label>
+        <label for="not-sure"><input class="inline" id="not-sure" type="radio" name="recommend-options" value="Not sure">Not sure</label><br><br>
+
+        <label for="product">What is your favorite BEB product?
+          <select id="product" name="product">
+            <option value="">Select an option </option>
+            <option value="1">Foundation</option>
+            <option value="2">Lipgloss</option>
+            <option value="3">Lipstick</option>
+            <option value="4">Blush</option>
+            <option value="5">Eye Lashes</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label for="range"><input class="inline" id="range" type="checkbox" name="improvement">Range of products</label>
+        <label for="texture"><input class="inline" id="texture" type="checkbox" name="improvement">Texture of foundation</label>
+        <label for="customerservice"><input class="inline" id="customerservice" type="checkbox" name="improvement">Customer Service</label>
+        <label for="price"><input class="inline" id="price" type="checkbox" name="improvement">Price of products</label>
+        <label for="none"><input class="inline" id="none" type="checkbox" name="improvement">Nothing</label><br><br>
+
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="bio" rows="3" column="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
